@@ -9,28 +9,31 @@
 <body>
 
 <div class="form-container">
-  <form class="signup-form">
+ <form action="https://formsubmit.co/shubhankraturi30@GMAIL.COM" method="POST">
+    
+    <input type="hidden" name="_captcha" value="false">
+
     <h1>Join PawfectMatch 🐾</h1>
     <p>Fill in your details to get started</p>
 
     <div class="input-group">
       <label>Full Name</label>
-      <input type="text" placeholder="John Doe" required>
+      <input type="text" name="full_name" placeholder="John Doe" required>
     </div>
 
     <div class="input-group">
       <label>Email Address</label>
-      <input type="email" placeholder="john@email.com" required>
+      <input type="email" name="email" placeholder="john@email.com" required>
     </div>
 
     <div class="input-group">
       <label>Dog's Name</label>
-      <input type="text" placeholder="Buddy" required>
+      <input type="text" name="dog_name" placeholder="Buddy" required>
     </div>
 
     <div class="input-group">
       <label>Choose Plan</label>
-      <select required>
+      <select name="plan" required>
         <option value="">Select a plan</option>
         <option>Chihuahua (Free)</option>
         <option>Labrador ($15/mo)</option>
@@ -40,7 +43,7 @@
 
     <div class="input-group">
       <label>Message</label>
-      <textarea placeholder="Tell us about your dog..."></textarea>
+      <textarea name="message" placeholder="Tell us about your dog..."></textarea>
     </div>
 
     <button type="submit" class="submit-btn">Submit</button>
@@ -49,3 +52,4 @@
 
 </body>
 </html>
+
